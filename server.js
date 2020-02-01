@@ -34,7 +34,7 @@ app.use(express.static("public"));
 //mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
-// ??? what is the mongodb url
+// ??? what is the mongodb url "mongolab-dimensional-89227"
 let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 mongoose.connect(MONGODB_URI, {
