@@ -1,6 +1,7 @@
 $(document).ready(function () {
     // scrape when scrape button is clicked
-    $(document).on("click", "#scrape", function () {
+    $(document).on("click", "#scrape", function (event) {
+        event.preventDefault();
         console.log("ready!");
         $.ajax({
                 method: "GET",
@@ -44,7 +45,8 @@ $(document).ready(function () {
     // })
 
     // Whenever someone clicks a p tag
-    $(document).on("click", "p", function () {
+    $(document).on("click", "p", function (event) {
+        event.preventDefault();
         // Empty the notes from the note section
         $("#notes").empty();
         // Save the id from the p tag - id is from database
@@ -78,7 +80,9 @@ $(document).ready(function () {
     });
 
     // When you click the savenote button
-    $(document).on("click", "#savenote", function () {
+    $(document).on("click", "#savenote", function (event) {
+        event.preventDefault();
+
         // Grab the id associated with the article from the submit button
         var thisId = $(this).attr("data-id");
 
