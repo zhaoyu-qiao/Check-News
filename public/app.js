@@ -24,7 +24,7 @@ $(document).ready(function () {
                     // </form>`)
 
                     // in order to be able to use "this" and grab the data[i]._id, need to wrap it up in one single element. p can be clicked btw!
-                    $("#articles").append("<p data-id='" + data[i]._id + "'>Title: " + data[i].title + "<br />Summary: " + data[i].summary + "<br /><a href='" + data[i].link + "'>" + data[i].link + "</a></p></hr>");
+                    $("#articles").append("<p data-id='" + data[i]._id + "'>Click here to add a note!<br />Title: " + data[i].title + "<br />Summary: " + data[i].summary + "<br /><a href='" + data[i].link + "'>" + data[i].link + "</a></p></hr>");
 
                 }
             })
@@ -105,6 +105,8 @@ $(document).ready(function () {
         $("#titleinput").val("");
         $("#bodyinput").val("");
     });
+
+    // need to add delete note button!
 })
 
 

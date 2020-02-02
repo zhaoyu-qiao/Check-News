@@ -2,11 +2,14 @@
 <html lang="en-us">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <meta charset="UTF-8">
     <title>Scraping With Mongoose</title>
     <!-- <style>
         body {
-            background-color: #F2F6D0
+            background-color: white
         }
 
         #wrapper {
@@ -26,6 +29,12 @@
         #notes {
             float: right;
             width: 30%;
+        }
+
+        #scrape {
+            margin-left: 12%;
+            display: block;
+            background-color: green;
         }
 
         textarea,
@@ -48,14 +57,21 @@
 </head>
 
 <body>
-    <div id="wrapper">
-        <h1>Note Scraper</h1>
-        <h2><i>This app allows you to scrape news from the UK Times Website!</i></h2>
-        <div id="notes"></div>
+    <div id="wrapper" class="jumbotron">
+        <h1 class="display-4">Note Scraper</h1>
+        <h2 class="lead"><i>This app allows you to scrape news from the UK Times Website!</i></h2>
+        <!-- <div id="notes"></div> -->
+    </div>
+    <div class="card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body" id="notes">
+            <h5 class="card-title">Add comments here!</h5>
+            <p class="card-text"></p>
+        </div>
     </div>
     <!--scrape button-->
     <div>
-        <button id="scrape" type="button">Scrape it!</button>
+        <button id="scrape" type="button" class="btn btn-dark">Scrape it!</button>
     </div>
     <!--Note input area-->
 
