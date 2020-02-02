@@ -13,7 +13,7 @@ let db = require("./models");
 let scrapeIt = require("./scrape")
 //console.log(scrapeIt)
 
-let PORT = 3005;
+let PORT = process.env.PORT || 3005;
 
 // Initialize Express
 let app = express();
